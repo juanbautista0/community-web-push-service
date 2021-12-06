@@ -31,7 +31,7 @@ const Notify = {
         if (Notify.keysValidate()) {
             const vapidkeys = Notify.getKeys();
             webpush.setVapidDetails(
-                'mailto:example@yourdomain.org',
+                process.env.SERVICE_WEB_PUSH_CONTACT,
                 vapidkeys.publicKey,
                 vapidkeys.privateKey
             );
