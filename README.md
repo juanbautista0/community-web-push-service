@@ -6,6 +6,7 @@ Community web push service
 </div>
 
 # Client (Web Browser)
+Add the code in the service worker file:
 
 ```js
 self.addEventListener("push", (e)=> {
